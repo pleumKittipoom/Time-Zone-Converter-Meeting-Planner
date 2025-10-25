@@ -85,13 +85,22 @@
 
 ---
 
-## ⚙️ Configuration — cities.csv
+## ⚙️ Configuration — `cities.csv`
 
-- รูปแบบคอลัมน์
+**รูปแบบคอลัมน์**
 
-column	ตัวอย่าง	อธิบายสั้น ๆ
-code	BKK	รหัสเมือง (A–Z/0–9, 2–5 ตัว)
-name	Bangkok	ชื่ออ่านง่าย (หลีกเลี่ยงเครื่องหมาย ,)
-zoneId	Asia/Bangkok	Java Zone ID (รองรับ DST อัตโนมัติ)
-workStart	09:00	เวลางานเริ่ม (ท้องถิ่น)
-workEnd	17:00	เวลางานเลิก (ท้องถิ่น)
+| column      | ตัวอย่าง        | อธิบายสั้น ๆ                                |
+|:------------|:-----------------|:---------------------------------------------|
+| `code`      | `BKK`            | รหัสเมือง (A–Z/0–9, 2–5 ตัว)                 |
+| `name`      | `Bangkok`        | ชื่ออ่านง่าย *(หลีกเลี่ยงเครื่องหมาย `,`)*   |
+| `zoneId`    | `Asia/Bangkok`   | Java Zone ID (รองรับ DST อัตโนมัติ)          |
+| `workStart` | `09:00`          | เวลางานเริ่ม (ท้องถิ่น)                      |
+| `workEnd`   | `17:00`          | เวลางานเลิก (ท้องถิ่น)                       |
+
+**ตัวอย่าง `cities.csv`**
+
+```csv
+code,name,zoneId,workStart,workEnd
+BKK,Bangkok,Asia/Bangkok,09:00,17:00
+NYC,New York,America/New_York,09:00,17:00
+TYO,Tokyo,Asia/Tokyo,09:00,17:00
