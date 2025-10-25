@@ -124,9 +124,9 @@
 2) ไถหน้าต่างช่วงประชุม [cursorUtc, cursorUtc + duration) ทีละ step นาที
 
 3) สำหรับทุกเมือง:
-- แปลงเป็นเวลาท้องถิ่นด้วย ZonedDateTime.withZoneSameInstant(...)
-- สร้าง workStartZ/workEndZ ของ วันนั้น (ถ้า workEnd < workStart → บวก 1 วันเพื่อรองรับ กะข้ามคืน)
-- ผ่านเมื่อ localStart ≥ workStartZ และ localEnd ≤ workEndZ
+  - แปลงเป็นเวลาท้องถิ่นด้วย ZonedDateTime.withZoneSameInstant(...)
+  - สร้าง workStartZ/workEndZ ของ วันนั้น (ถ้า workEnd < workStart → บวก 1 วันเพื่อรองรับ กะข้ามคืน)
+  - ผ่านเมื่อ localStart ≥ workStartZ และ localEnd ≤ workEndZ
 
 4) ทุกเมืองผ่าน ⇒ เก็บเป็นผลลัพธ์
 
