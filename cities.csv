@@ -1,0 +1,13 @@
+code,name,zoneId,workStart,workEnd
+BER,Berlin,Europe/Berlin,09:00,17:00
+BKK,Bangkok,Asia/Bangkok,09:00,17:00
+DEL,Delhi,Asia/Kolkata,09:00,17:00
+LON,London,Europe/London,09:00,17:00
+NYC,New York,America/New_York,09:00,17:00
+PAR,Paris,Europe/Paris,09:00,17:00
+SEO,Seoul,Asia/Seoul,09:00,18:00
+SFO,San Francisco,America/Los_Angeles,09:00,17:00
+SGP,Singapore,Asia/Singapore,09:00,17:00
+SHA,Shanghai,Asia/Shanghai,09:00,17:00
+SYD,Sydney,Australia/Sydney,09:00,17:00
+TYO,Tokyo,Asia/Tokyo,09:00,17:00
