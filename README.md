@@ -50,20 +50,48 @@
   java -version
   javac -version
 
----
-
 ### 2) Build & Run
 
 - Windows
-
-javac -encoding UTF-8 -d out src\app\*.java
-java  -Dfile.encoding=UTF-8 -cp out app.Main
+  ```bat
+  javac -encoding UTF-8 -d out src\app\*.java
+  java  -Dfile.encoding=UTF-8 -cp out app.Main
 
 
 - macOS / Linux
-
-javac -encoding UTF-8 -d out src/app/*.java
-java  -Dfile.encoding=UTF-8 -cp out app.Main
-
+  ```bat
+  javac -encoding UTF-8 -d out src/app/*.java
+  java  -Dfile.encoding=UTF-8 -cp out app.Main
 
 ใช้ VS Code ก็ได้: ติดตั้ง “Extension Pack for Java” → เปิด Main.java → ▶ Run
+
+---
+
+##  🗂 Project Structure
+- tz-planner-swing/
+  ```bat
+  ├─ cities.csv
+  └─ src/app/
+     ├─ Main.java                # Entry point
+     ├─ MainFrame.java           # Window + Menu (Admin)
+     ├─ ConvertPanel.java        # Convert tab
+     ├─ PlanPanel.java           # Planning tab (JTable)
+     ├─ SlotTableModel.java      # TableModel for results
+     ├─ AddCityDialog.java       # Admin dialog (add/update)
+     ├─ City.java, WorkHours.java
+     ├─ CityIndex.java           # CSV load/save (+upsert, exists)
+     ├─ TimeZoneService.java     # Zone conversion
+     └─ MeetingPlanner.java      # Planning algorithm (day-aware)
+
+---
+
+## ⚙️ Configuration — cities.csv
+
+- รูปแบบคอลัมน์
+
+column	ตัวอย่าง	อธิบายสั้น ๆ
+code	BKK	รหัสเมือง (A–Z/0–9, 2–5 ตัว)
+name	Bangkok	ชื่ออ่านง่าย (หลีกเลี่ยงเครื่องหมาย ,)
+zoneId	Asia/Bangkok	Java Zone ID (รองรับ DST อัตโนมัติ)
+workStart	09:00	เวลางานเริ่ม (ท้องถิ่น)
+workEnd	17:00	เวลางานเลิก (ท้องถิ่น)
