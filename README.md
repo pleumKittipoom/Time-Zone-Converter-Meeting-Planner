@@ -8,15 +8,6 @@
 
 ---
 
-## 📸 Screenshots
-> (วางภาพไว้ใน `docs/screenshots/` แล้วแก้พาธได้ตามสะดวก)
-- Convert Time  
-  ![Convert](docs/screenshots/convert.png)
-- Plan Meeting  
-  ![Plan](docs/screenshots/plan.png)
-
----
-
 ## 🧭 Table of Contents
 - [Features](#features)
 - [Quick Start](#quick-start)
@@ -24,10 +15,6 @@
 - [Configuration — `cities.csv`](#configuration--citiescsv)
 - [Admin (Add/Update City)](#admin-addupdate-city)
 - [How Planning Works](#how-planning-works)
-- [UML Diagrams](#uml-diagrams)
-- [Troubleshooting](#troubleshooting)
-- [Roadmap](#roadmap)
-- [License](#license)
 
 ---
 
@@ -117,7 +104,7 @@
 
 ---
 
-🧠 How Planning Works
+## 🧠 How Planning Works
 
 1) สร้างเส้นเวลา UTC จาก startDate 00:00 → ไปอีก days วัน
 
