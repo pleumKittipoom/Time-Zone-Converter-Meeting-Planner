@@ -49,3 +49,21 @@
   winget install --id EclipseAdoptium.Temurin.21.JDK -e
   java -version
   javac -version
+
+---
+
+### 2) Build & Run
+
+- Windows
+
+javac -encoding UTF-8 -d out src\app\*.java
+java  -Dfile.encoding=UTF-8 -cp out app.Main
+
+
+- macOS / Linux
+
+javac -encoding UTF-8 -d out src/app/*.java
+java  -Dfile.encoding=UTF-8 -cp out app.Main
+
+
+ใช้ VS Code ก็ได้: ติดตั้ง “Extension Pack for Java” → เปิด Main.java → ▶ Run
