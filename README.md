@@ -4,7 +4,7 @@
 
 ![JDK](https://img.shields.io/badge/JDK-21%2B-blue)
 ![GUI](https://img.shields.io/badge/GUI-Swing-informational)
-![License](https://img.shields.io/badge/License-MIT-green)
+
 
 ---
 
